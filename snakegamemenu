@@ -1,0 +1,41 @@
+def menu():
+    print("=" * 40)
+    print(" Jogo da Cobrinha Multidisciplinar ")
+    print("=" * 40)
+    print("Escolha uma disciplina para explorar:")
+    print("1. Matemática")
+    print("2. Ciências")
+    print("3. Geografia")
+    print("4. História")
+    print("5. Língua Portuguesa")
+    print("6. Tecnologia")
+    print("7. Sair")
+    print("=" * 40)
+
+def main():
+    while True:
+        menu()
+        escolha = input("Digite o número da disciplina escolhida: ")
+
+        if escolha == "1":
+            print("\nVocê escolheu Matemática! Adicione desafios matemáticos aqui.")
+        elif escolha == "2":
+            print("\nVocê escolheu Ciências! Explore conteúdos científicos aqui.")
+        elif escolha == "3":
+            print("\nVocê escolheu Geografia! Adicione mapas e curiosidades geográficas.")
+        elif escolha == "4":
+            print("\nVocê escolheu História! Explore eventos históricos aqui.")
+        elif escolha == "5":
+            print("\nVocê escolheu Língua Portuguesa! Trabalhe com palavras e frases.")
+        elif escolha == "6":
+            print("\nVocê escolheu Tecnologia! Descubra a lógica por trás do jogo.")
+        elif escolha == "7":
+            print("\nSaindo do jogo... Até logo!")
+            break
+        else:
+            print("\nOpção inválida. Por favor, escolha novamente.")
+        
+        input("\nPressione Enter para voltar ao menu principal...")
+
+if __name__ == "__main__":
+    main()
